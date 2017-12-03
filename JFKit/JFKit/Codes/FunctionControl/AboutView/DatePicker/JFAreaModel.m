@@ -1,0 +1,41 @@
+//
+//  JFAreaModel.m
+//  JFKit
+//
+//  Created by hudan on 17/1/9.
+//  Copyright © 2017年 hudan. All rights reserved.
+//
+
+#import "JFAreaModel.h"
+
+@interface JFAreaModel ()
+
+@end
+
+@implementation JFAreaModel
+
+- (void)setValueWithArray:(NSArray *)array
+{
+    if (array.count == 2) {
+        self.areaCode = [array objectAtIndex:0];
+        self.areaName = [array objectAtIndex:1];
+    }
+    else {
+#ifdef DEBUG
+        NSAssert(NO, @"数组数量不对");
+#endif
+    }
+}
+
+- (id)copyWithZone:(NSZone *)zone
+{
+    JFAreaModel *model = [[JFAreaModel alloc] init];
+    if (model) {
+        model.areaName = [self.areaName copyWithZone:zone];
+        model.areaCode = [self.areaCode copyWithZone:zone];
+    }
+    
+    return model;
+}
+
+@end
