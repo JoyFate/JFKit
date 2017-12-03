@@ -2,7 +2,7 @@
 
 
 使用:
-    pod 'JFKit', :git => "https://github.com/huxiadan/JFKit.git"
+    pod 'JFKit', :git => "https://github.com/JoyFate/JFKit.git"
 
 
 引用第三方:
