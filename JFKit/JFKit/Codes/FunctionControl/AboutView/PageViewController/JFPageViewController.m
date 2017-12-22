@@ -72,6 +72,10 @@
     // viewController
     self.childControllerView = [[JFControllersView alloc] initFrame:CGRectMake(0, CGRectGetMaxY(self.titleView.frame), kJFAppWidth, self.view.frame.size.height - titleFrame.size.height - 20) controllers:self.controllers];
     
+    for (UIViewController *controller in self.controllers) {
+        [self addChildViewController:controller];
+    }
+    
     [self.view addSubview:self.titleView];
     [self.view addSubview:self.childControllerView];
 
