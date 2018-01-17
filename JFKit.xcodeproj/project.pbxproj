@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		04414E98200F1C2A0076DB4B /* JFMarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04414E94200F1C2A0076DB4B /* JFMarqueeView.m */; };
 		04414E99200F1C2A0076DB4B /* JFMarqueeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04414E96200F1C2A0076DB4B /* JFMarqueeModel.m */; };
+		04414E9D200F1F160076DB4B /* JFPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04414E9C200F1F160076DB4B /* JFPickerView.m */; };
+		04414EA0200F21DB0076DB4B /* JFPickerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04414E9F200F21DB0076DB4B /* JFPickerModel.m */; };
 		591233E61F035DE600483280 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 591233E51F035DE600483280 /* main.m */; };
 		591233E91F035DE600483280 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 591233E81F035DE600483280 /* AppDelegate.m */; };
 		591233EC1F035DE700483280 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591233EB1F035DE700483280 /* ViewController.m */; };
@@ -29,9 +31,6 @@
 		5912354A1F035E2600483280 /* UITabBar+JF.m in Sources */ = {isa = PBXBuildFile; fileRef = 591234231F035E2600483280 /* UITabBar+JF.m */; };
 		5912354B1F035E2600483280 /* UIView+JF.m in Sources */ = {isa = PBXBuildFile; fileRef = 591234261F035E2600483280 /* UIView+JF.m */; };
 		5912354C1F035E2600483280 /* JFAutoButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5912342B1F035E2600483280 /* JFAutoButtonView.m */; };
-		5912354D1F035E2600483280 /* JFAreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5912342E1F035E2600483280 /* JFAreaModel.m */; };
-		5912354E1F035E2600483280 /* JFAreaPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 591234301F035E2600483280 /* JFAreaPicker.m */; };
-		5912354F1F035E2600483280 /* JFPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 591234321F035E2600483280 /* JFPickerView.m */; };
 		591235501F035E2600483280 /* JFHUB.m in Sources */ = {isa = PBXBuildFile; fileRef = 591234351F035E2600483280 /* JFHUB.m */; };
 		591235531F035E2600483280 /* JFNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5912343D1F035E2600483280 /* JFNumberView.m */; };
 		591235541F035E2600483280 /* JFOptionSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 591234401F035E2600483280 /* JFOptionSlider.m */; };
@@ -156,6 +155,10 @@
 		04414E95200F1C2A0076DB4B /* JFMarqueeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMarqueeModel.h; sourceTree = "<group>"; };
 		04414E96200F1C2A0076DB4B /* JFMarqueeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFMarqueeModel.m; sourceTree = "<group>"; };
 		04414E97200F1C2A0076DB4B /* JFMarqueeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMarqueeView.h; sourceTree = "<group>"; };
+		04414E9B200F1F160076DB4B /* JFPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFPickerView.h; sourceTree = "<group>"; };
+		04414E9C200F1F160076DB4B /* JFPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFPickerView.m; sourceTree = "<group>"; };
+		04414E9E200F21DB0076DB4B /* JFPickerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFPickerModel.h; sourceTree = "<group>"; };
+		04414E9F200F21DB0076DB4B /* JFPickerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFPickerModel.m; sourceTree = "<group>"; };
 		15182051950B158899C61CAD /* libPods-JFKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JFKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		162820CE5113A7F07365EF99 /* Pods-JFKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFKit/Pods-JFKit.debug.xcconfig"; sourceTree = "<group>"; };
 		591233E11F035DE600483280 /* JFKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,12 +199,6 @@
 		591234261F035E2600483280 /* UIView+JF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JF.m"; sourceTree = "<group>"; };
 		5912342A1F035E2600483280 /* JFAutoButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFAutoButtonView.h; sourceTree = "<group>"; };
 		5912342B1F035E2600483280 /* JFAutoButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFAutoButtonView.m; sourceTree = "<group>"; };
-		5912342D1F035E2600483280 /* JFAreaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFAreaModel.h; sourceTree = "<group>"; };
-		5912342E1F035E2600483280 /* JFAreaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFAreaModel.m; sourceTree = "<group>"; };
-		5912342F1F035E2600483280 /* JFAreaPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFAreaPicker.h; sourceTree = "<group>"; };
-		591234301F035E2600483280 /* JFAreaPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFAreaPicker.m; sourceTree = "<group>"; };
-		591234311F035E2600483280 /* JFPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFPickerView.h; sourceTree = "<group>"; };
-		591234321F035E2600483280 /* JFPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPickerView.m; sourceTree = "<group>"; };
 		591234341F035E2600483280 /* JFHUB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHUB.h; sourceTree = "<group>"; };
 		591234351F035E2600483280 /* JFHUB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHUB.m; sourceTree = "<group>"; };
 		5912343C1F035E2600483280 /* JFNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFNumberView.h; sourceTree = "<group>"; };
@@ -433,6 +430,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04414E9A200F1F010076DB4B /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				04414E9B200F1F160076DB4B /* JFPickerView.h */,
+				04414E9C200F1F160076DB4B /* JFPickerView.m */,
+				04414E9E200F21DB0076DB4B /* JFPickerModel.h */,
+				04414E9F200F21DB0076DB4B /* JFPickerModel.m */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
 		591233D81F035DE600483280 = {
 			isa = PBXGroup;
 			children = (
@@ -668,11 +676,11 @@
 		591234281F035E2600483280 /* AboutView */ = {
 			isa = PBXGroup;
 			children = (
+				04414E9A200F1F010076DB4B /* PickerView */,
 				59DA2B431F6A227900719E31 /* SingleInputView */,
 				59B29B3B1F0DE23400E3393F /* Base */,
 				59EC825E1F0B942600938EBF /* JFCardView */,
 				591234291F035E2600483280 /* AutoButtonView */,
-				5912342C1F035E2600483280 /* DatePicker */,
 				591234331F035E2600483280 /* HUB */,
 				591234361F035E2600483280 /* Marquee */,
 				5912343B1F035E2600483280 /* NumberView */,
@@ -693,19 +701,6 @@
 				5912342B1F035E2600483280 /* JFAutoButtonView.m */,
 			);
 			path = AutoButtonView;
-			sourceTree = "<group>";
-		};
-		5912342C1F035E2600483280 /* DatePicker */ = {
-			isa = PBXGroup;
-			children = (
-				5912342D1F035E2600483280 /* JFAreaModel.h */,
-				5912342E1F035E2600483280 /* JFAreaModel.m */,
-				5912342F1F035E2600483280 /* JFAreaPicker.h */,
-				591234301F035E2600483280 /* JFAreaPicker.m */,
-				591234311F035E2600483280 /* JFPickerView.h */,
-				591234321F035E2600483280 /* JFPickerView.m */,
-			);
-			path = DatePicker;
 			sourceTree = "<group>";
 		};
 		591234331F035E2600483280 /* HUB */ = {
@@ -1600,10 +1595,10 @@
 				591235721F035E2600483280 /* PubUtil.m in Sources */,
 				591235631F035E2600483280 /* JFDeviceInfo.m in Sources */,
 				591235401F035E2600483280 /* NSArray+JF.m in Sources */,
+				04414EA0200F21DB0076DB4B /* JFPickerModel.m in Sources */,
 				591235981F035E2700483280 /* LGPhotoPickerCollectionView.m in Sources */,
 				591235751F035E2600483280 /* NSString+MD5HMAC.m in Sources */,
 				5912355F1F035E2600483280 /* JFLocalNotification.m in Sources */,
-				5912354F1F035E2600483280 /* JFPickerView.m in Sources */,
 				591235501F035E2600483280 /* JFHUB.m in Sources */,
 				591235461F035E2600483280 /* NSString+JF.m in Sources */,
 				5912355D1F035E2600483280 /* JFStarView.m in Sources */,
@@ -1628,7 +1623,6 @@
 				591235621F035E2600483280 /* JFColor.m in Sources */,
 				591235821F035E2600483280 /* JFButton.m in Sources */,
 				591235761F035E2600483280 /* NSString+SHA1HMAC.m in Sources */,
-				5912354D1F035E2600483280 /* JFAreaModel.m in Sources */,
 				591235611F035E2600483280 /* JFTouchID.m in Sources */,
 				591233E91F035DE600483280 /* AppDelegate.m in Sources */,
 				591235851F035E2600483280 /* JFTabbarViewController.m in Sources */,
@@ -1671,6 +1665,7 @@
 				591235701F035E2600483280 /* Helper.m in Sources */,
 				591235961F035E2700483280 /* LGPhotoPickerGroupViewController.m in Sources */,
 				591235471F035E2600483280 /* NSUserDefaults+JF.m in Sources */,
+				04414E9D200F1F160076DB4B /* JFPickerView.m in Sources */,
 				591235931F035E2700483280 /* LGPhotoPickerDatas.m in Sources */,
 				5912356E1F035E2600483280 /* HBBase64.mm in Sources */,
 				591235541F035E2600483280 /* JFOptionSlider.m in Sources */,
@@ -1691,7 +1686,6 @@
 				591235A11F035E2700483280 /* ZLCameraImageView.m in Sources */,
 				591235921F035E2700483280 /* LGPhotoAssets.m in Sources */,
 				5912356D1F035E2600483280 /* Hardware.m in Sources */,
-				5912354E1F035E2600483280 /* JFAreaPicker.m in Sources */,
 				59B29B431F0DE23400E3393F /* BaseViewController.m in Sources */,
 				591235531F035E2600483280 /* JFNumberView.m in Sources */,
 				591235901F035E2700483280 /* LGPhotoPickerBrowserPhotoView.m in Sources */,
