@@ -87,6 +87,7 @@
         NSMutableAttributedString *mAttrString = [[NSMutableAttributedString alloc] initWithAttributedString:[NSAttributedString getAttributeString:text lineSpacing:self.lineSpace]];
         NSMutableParagraphStyle *style  = [[NSMutableParagraphStyle alloc] init];
         style.alignment = self.textAlignment;
+        style.lineSpacing = self.lineSpace;
         [mAttrString addAttributes:@{NSFontAttributeName : self.font,
                                      NSParagraphStyleAttributeName : style
                                      } range:NSMakeRange(0, text.length)];

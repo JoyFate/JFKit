@@ -14,7 +14,9 @@
 {
     CGRect rect = (CGRect){0.f, 0.f, image.size};
     
-    UIGraphicsBeginImageContextWithOptions(image.size, NO, UIScreen.mainScreen.scale);CGContextAddPath(UIGraphicsGetCurrentContext(), [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:radius].CGPath);CGContextClip(UIGraphicsGetCurrentContext());
+    UIGraphicsBeginImageContextWithOptions(image.size, NO, UIScreen.mainScreen.scale);
+    CGContextAddPath(UIGraphicsGetCurrentContext(), [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:radius].CGPath);
+    CGContextClip(UIGraphicsGetCurrentContext());
     
     [image drawInRect:rect];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();

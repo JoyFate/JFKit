@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04414E98200F1C2A0076DB4B /* JFMarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04414E94200F1C2A0076DB4B /* JFMarqueeView.m */; };
+		04414E99200F1C2A0076DB4B /* JFMarqueeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04414E96200F1C2A0076DB4B /* JFMarqueeModel.m */; };
 		591233E61F035DE600483280 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 591233E51F035DE600483280 /* main.m */; };
 		591233E91F035DE600483280 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 591233E81F035DE600483280 /* AppDelegate.m */; };
 		591233EC1F035DE700483280 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591233EB1F035DE700483280 /* ViewController.m */; };
@@ -31,8 +33,6 @@
 		5912354E1F035E2600483280 /* JFAreaPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 591234301F035E2600483280 /* JFAreaPicker.m */; };
 		5912354F1F035E2600483280 /* JFPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 591234321F035E2600483280 /* JFPickerView.m */; };
 		591235501F035E2600483280 /* JFHUB.m in Sources */ = {isa = PBXBuildFile; fileRef = 591234351F035E2600483280 /* JFHUB.m */; };
-		591235511F035E2600483280 /* MarqueeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 591234381F035E2600483280 /* MarqueeModel.m */; };
-		591235521F035E2600483280 /* MarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5912343A1F035E2600483280 /* MarqueeView.m */; };
 		591235531F035E2600483280 /* JFNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5912343D1F035E2600483280 /* JFNumberView.m */; };
 		591235541F035E2600483280 /* JFOptionSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 591234401F035E2600483280 /* JFOptionSlider.m */; };
 		591235551F035E2600483280 /* JFPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591234431F035E2600483280 /* JFPageViewController.m */; };
@@ -152,6 +152,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04414E94200F1C2A0076DB4B /* JFMarqueeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFMarqueeView.m; sourceTree = "<group>"; };
+		04414E95200F1C2A0076DB4B /* JFMarqueeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMarqueeModel.h; sourceTree = "<group>"; };
+		04414E96200F1C2A0076DB4B /* JFMarqueeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFMarqueeModel.m; sourceTree = "<group>"; };
+		04414E97200F1C2A0076DB4B /* JFMarqueeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMarqueeView.h; sourceTree = "<group>"; };
 		15182051950B158899C61CAD /* libPods-JFKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JFKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		162820CE5113A7F07365EF99 /* Pods-JFKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFKit/Pods-JFKit.debug.xcconfig"; sourceTree = "<group>"; };
 		591233E11F035DE600483280 /* JFKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,10 +204,6 @@
 		591234321F035E2600483280 /* JFPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPickerView.m; sourceTree = "<group>"; };
 		591234341F035E2600483280 /* JFHUB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFHUB.h; sourceTree = "<group>"; };
 		591234351F035E2600483280 /* JFHUB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFHUB.m; sourceTree = "<group>"; };
-		591234371F035E2600483280 /* MarqueeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarqueeModel.h; sourceTree = "<group>"; };
-		591234381F035E2600483280 /* MarqueeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarqueeModel.m; sourceTree = "<group>"; };
-		591234391F035E2600483280 /* MarqueeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarqueeView.h; sourceTree = "<group>"; };
-		5912343A1F035E2600483280 /* MarqueeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarqueeView.m; sourceTree = "<group>"; };
 		5912343C1F035E2600483280 /* JFNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFNumberView.h; sourceTree = "<group>"; };
 		5912343D1F035E2600483280 /* JFNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFNumberView.m; sourceTree = "<group>"; };
 		5912343F1F035E2600483280 /* JFOptionSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFOptionSlider.h; sourceTree = "<group>"; };
@@ -720,10 +720,10 @@
 		591234361F035E2600483280 /* Marquee */ = {
 			isa = PBXGroup;
 			children = (
-				591234371F035E2600483280 /* MarqueeModel.h */,
-				591234381F035E2600483280 /* MarqueeModel.m */,
-				591234391F035E2600483280 /* MarqueeView.h */,
-				5912343A1F035E2600483280 /* MarqueeView.m */,
+				04414E95200F1C2A0076DB4B /* JFMarqueeModel.h */,
+				04414E96200F1C2A0076DB4B /* JFMarqueeModel.m */,
+				04414E97200F1C2A0076DB4B /* JFMarqueeView.h */,
+				04414E94200F1C2A0076DB4B /* JFMarqueeView.m */,
 			);
 			path = Marquee;
 			sourceTree = "<group>";
@@ -1552,13 +1552,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JFKit-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5A90B330752DD29849259F80 /* [CP] Copy Pods Resources */ = {
@@ -1567,9 +1570,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JFKit/Pods-JFKit-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1588,6 +1594,7 @@
 				591235591F035E2600483280 /* JFNetAudioPlayer.m in Sources */,
 				5912355E1F035E2600483280 /* JFCache.m in Sources */,
 				5912355B1F035E2600483280 /* RefreshHeader.m in Sources */,
+				04414E98200F1C2A0076DB4B /* JFMarqueeView.m in Sources */,
 				5912354C1F035E2600483280 /* JFAutoButtonView.m in Sources */,
 				591235671F035E2600483280 /* NSData+SHA1Digest.m in Sources */,
 				591235721F035E2600483280 /* PubUtil.m in Sources */,
@@ -1606,7 +1613,6 @@
 				59EC82641F0B942600938EBF /* JFCardView.m in Sources */,
 				5912357E1F035E2600483280 /* JFFileTool.m in Sources */,
 				591235871F035E2600483280 /* JFTextField.m in Sources */,
-				591235511F035E2600483280 /* MarqueeModel.m in Sources */,
 				5912359B1F035E2700483280 /* LGPhotoPickerGroupTableViewCell.m in Sources */,
 				591235571F035E2600483280 /* JFTitleView.m in Sources */,
 				59B29B421F0DE23400E3393F /* BaseNavigationController.m in Sources */,
@@ -1614,6 +1620,7 @@
 				5912353F1F035E2600483280 /* AVMetadataItem+JF.m in Sources */,
 				5912359A1F035E2700483280 /* LGPhotoPickerFooterCollectionReusableView.m in Sources */,
 				591233EC1F035DE700483280 /* ViewController.m in Sources */,
+				04414E99200F1C2A0076DB4B /* JFMarqueeModel.m in Sources */,
 				5912357B1F035E2600483280 /* LPositon.m in Sources */,
 				5912358E1F035E2700483280 /* LGPhotoPickerBrowserPhotoImageView.m in Sources */,
 				591235A21F035E2700483280 /* ZLCameraView.m in Sources */,
@@ -1670,7 +1677,6 @@
 				591235731F035E2600483280 /* Triple3DesUtils.m in Sources */,
 				5912359F1F035E2700483280 /* LGCameraImageView.m in Sources */,
 				591235791F035E2600483280 /* DataOrganize1.m in Sources */,
-				591235521F035E2600483280 /* MarqueeView.m in Sources */,
 				591235951F035E2700483280 /* LGPhotoPickerAssetsViewController.m in Sources */,
 				591235771F035E2600483280 /* NSString+SHA256HMAC.m in Sources */,
 				591235781F035E2600483280 /* JFEncryptTool.m in Sources */,
