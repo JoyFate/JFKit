@@ -10,6 +10,23 @@
 
 @implementation JFTextField
 
++ (instancetype)makeWithPlaceholder:(NSString *)placeholder leftMargin:(CGFloat)leftMargin fontSize:(CGFloat)fontSize fontColor:(UIColor *)fontColor radius:(CGFloat)radius
+{
+    JFTextField *field = [JFTextField new];
+    
+    field.placeholder = placeholder;
+    field.leftMargin = leftMargin;
+    field.fontSize = fontSize;
+    field.textColor = fontColor;
+    
+    if (radius != 0) {
+        field.layer.cornerRadius = radius;
+        field.layer.masksToBounds = YES;
+    }
+    
+    return field;
+}
+
 - (void)setLeftMargin:(CGFloat)leftMargin
 {
     UIView *leftView = [[UIView alloc] init];

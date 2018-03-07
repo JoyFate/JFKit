@@ -46,6 +46,14 @@ typedef void(^ButtonActionBlock)(JFButton *sender);
  */
 + (instancetype)make;
 
++ (instancetype)makeWithTitle:(NSString *)title
+                     fontSize:(CGFloat)fontSize
+                    fontColor:(UIColor *)fontColor
+                fontSelectColor:(UIColor *)fontSelectColor
+                        image:(UIImage *)image
+                  selectImage:(UIImage *)selectImage
+                       target:(id)target
+                       action:(SEL)action;
 
 /**
  添加按钮响应方法

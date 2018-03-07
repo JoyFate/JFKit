@@ -19,4 +19,6 @@ typedef void(^JFTextFieldDeleteBackwardBlock)(JFTextField *textField);
 @property (nonatomic, strong) UIColor *placeholderColor;                            // placeholder 的颜色
 @property (nonatomic, copy) JFTextFieldDeleteBackwardBlock deleteBackwardBlock;     // 删除按钮点击的 block
 
++ (instancetype)makeWithPlaceholder:(NSString *)placeholder leftMargin:(CGFloat)leftMargin fontSize:(CGFloat)fontSize fontColor:(UIColor *)fontColor radius:(CGFloat)radius;
+
 @end

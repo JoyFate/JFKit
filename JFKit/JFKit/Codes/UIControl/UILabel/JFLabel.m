@@ -30,6 +30,18 @@
     return self;
 }
 
++ (instancetype)makeText:(NSString *)text fontColor:(UIColor *)color fontSize:(CGFloat)fontSize
+{
+    JFLabel *label = [JFLabel new];
+    label.width = 0;
+    label.contentMode = UIViewContentModeTop;
+    label.text = text;
+    label.fontSize = fontSize;
+    label.textColor = color;
+    
+    return label;
+}
+
 - (void)initData
 {
     self.width = 0;

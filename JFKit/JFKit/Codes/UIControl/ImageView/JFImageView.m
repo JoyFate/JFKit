@@ -25,4 +25,15 @@
     self.image = newImage;
 }
 
++ (instancetype)makeWithImage:(UIImage *)image radius:(CGFloat)radius
+{
+    JFImageView *imageView = [[JFImageView alloc] initWithImage:image];
+    
+    if (radius != 0) {
+        imageView.layer.cornerRadius = radius;
+        imageView.layer.masksToBounds = YES;
+    }
+    
+    return imageView;
+}
 @end
