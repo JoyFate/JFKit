@@ -80,9 +80,8 @@
         if (titleSize.width + 0.5 < frameSize.width) {
             titleSize.width = frameSize.width;
         }
-        CGFloat totalHeight = (imageSize.height + titleSize.height + self.verImageTitleSpacing);
-        self.imageEdgeInsets = UIEdgeInsetsMake(- (totalHeight - imageSize.height), 0.0, 0.0, - titleSize.width);
-        self.titleEdgeInsets = UIEdgeInsetsMake(0, - imageSize.width, - (totalHeight - titleSize.height), 0);
+        self.imageEdgeInsets = UIEdgeInsetsMake(- (self.titleImageMargin - imageSize.height), 0.0, 0.0, - titleSize.width);
+        self.titleEdgeInsets = UIEdgeInsetsMake(0, - imageSize.width, - (self.titleImageMargin - titleSize.height), 0);
     }
     else if (self.buttonImageType == JFButtonType_ImageRight) {
         CGSize imageSize = self.imageView.frame.size;
@@ -92,9 +91,8 @@
         if (titleSize.width + 0.5 < frameSize.width) {
             titleSize.width = frameSize.width;
         }
-        CGFloat totalWidth = (imageSize.width + titleSize.width + self.horImageTitleSpacing);
-        self.imageEdgeInsets = UIEdgeInsetsMake(0, titleSize.width, 0.0,  - (totalWidth - imageSize.width));
-        self.titleEdgeInsets = UIEdgeInsetsMake(0, -(totalWidth - titleSize.width), 0, imageSize.width);
+        self.imageEdgeInsets = UIEdgeInsetsMake(0, titleSize.width, 0.0,  - (self.titleImageMargin - imageSize.width));
+        self.titleEdgeInsets = UIEdgeInsetsMake(0, -(self.titleImageMargin - titleSize.width), 0, imageSize.width);
     }
 }
 

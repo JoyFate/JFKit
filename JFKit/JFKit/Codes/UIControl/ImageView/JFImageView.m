@@ -36,4 +36,13 @@
     
     return imageView;
 }
+
+- (void)addTarget:(id)target action:(SEL)action
+{
+    if (target && action) {
+        self.userInteractionEnabled = YES;
+        UITapGestureRecognizer *tapGtr = [[UITapGestureRecognizer alloc] initWithTarget:target action:action];
+        [self addGestureRecognizer:tapGtr];
+    }
+}
 @end

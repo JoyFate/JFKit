@@ -32,12 +32,10 @@ typedef void(^ButtonActionBlock)(JFButton *sender);
 @property (nonatomic, strong) UIColor *titleSelectedColor;  // 标题选中状态颜色 <默认为标题颜色,未设置标题颜色,则为黑色>
 @property (nonatomic, assign) CGFloat titleFontSize;        // 文字颜色
 @property (nonatomic, strong) UIImage *buttonImage;         // 图片
-@property (nonatomic, strong) UIImage *buttonSelectedImage;    // 选中图片
+@property (nonatomic, strong) UIImage *buttonSelectedImage; // 选中图片
 
 @property (nonatomic, assign) JFButtonType buttonImageType;
-@property (nonatomic, assign) CGFloat verImageTitleSpacing; // 上图下文字按钮中图片和文字的间距(注意:设置图片和文字后调用 setter 方法)
-@property (nonatomic, assign) CGFloat horImageTitleSpacing; // 右图左文字按钮中图片和文字的间距
-
+@property (nonatomic, assign) CGFloat titleImageMargin;     // 上图下文字按钮中图片和文字的间距(注意:设置图片和文字后调用 setter 方法)
 
 /**
  快捷初始化方法

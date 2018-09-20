@@ -12,7 +12,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^TouchIDSuccessBlock)();
+typedef void(^TouchIDSuccessBlock)(void);
 typedef void(^TouchIDFailBlock)(NSString *failReason);
 
 @interface JFTouchID : NSObject

@@ -23,6 +23,6 @@
 + (MJRefreshAutoFooter *)footerWithTitle:(NSString *)title
                           uploadingTitle:(NSString *)uploadingTitle
                              noMoreTitle:(NSString *)noMoreTitle
-                             uploadBlock:(void(^)())uploadBlock;
+                             uploadBlock:(void(^)(void))uploadBlock;
 
 @end

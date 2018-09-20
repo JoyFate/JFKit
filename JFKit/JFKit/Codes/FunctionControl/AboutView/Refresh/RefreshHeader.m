@@ -12,7 +12,7 @@
 
 + (MJRefreshNormalHeader *)headerWithTitle:(NSString *)title
                              freshingTitle:(NSString *)freshingTitle
-                                freshBlock:(void (^)())freshBlock
+                                freshBlock:(void (^)(void))freshBlock
 {
     MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingBlock:freshBlock];
     

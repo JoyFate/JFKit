@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^JFTextViewOverMaxNumberBlock)();              // 超过最大限制字数的 block
+typedef void(^JFTextViewOverMaxNumberBlock)(void);              // 超过最大限制字数的 block
 
 @protocol JFTextViewDelegate <NSObject>
 

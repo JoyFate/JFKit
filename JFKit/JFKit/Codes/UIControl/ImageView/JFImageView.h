@@ -20,4 +20,6 @@
 
 + (instancetype)makeWithImage:(UIImage *)image radius:(CGFloat)radius;
 
+- (void)addTarget:(id)target action:(SEL)action;
+
 @end

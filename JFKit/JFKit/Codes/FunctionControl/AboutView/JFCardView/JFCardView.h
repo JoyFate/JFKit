@@ -18,7 +18,7 @@ typedef NS_ENUM(NSInteger) {
     JFCardViewType_JustToNext,      // 左滑右滑都是下一个
 }JFCardViewType;
 
-typedef void(^NoMoreDataBlock)();
+typedef void(^NoMoreDataBlock)(void);
 
 @protocol JFCardViewDelegate <NSObject>
 

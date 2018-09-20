@@ -125,7 +125,7 @@
     // 说明是上图下文字的排版
     if (self.imagesArray.count > 0) {
         button.buttonImageType = JFButtonType_ImageTop;
-        button.verImageTitleSpacing = fJFScreen(10);
+        button.titleImageMargin = fJFScreen(10);
         button.buttonImage = [self.imagesArray objectAtIndex:index];
         button.buttonSelectedImage = [self.imagesArray objectAtIndex:index + self.titlesArray.count];
     }
