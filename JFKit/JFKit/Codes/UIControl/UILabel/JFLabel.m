@@ -30,6 +30,18 @@
     return self;
 }
 
++ (instancetype)makeText:(NSString *)text fontColor:(UIColor *)color fontSize:(CGFloat)fontSize
+{
+    JFLabel *label = [JFLabel new];
+    label.width = 0;
+    label.contentMode = UIViewContentModeTop;
+    label.text = text;
+    label.fontSize = fontSize;
+    label.textColor = color;
+    
+    return label;
+}
+
 - (void)initData
 {
     self.width = 0;
@@ -87,6 +99,7 @@
         NSMutableAttributedString *mAttrString = [[NSMutableAttributedString alloc] initWithAttributedString:[NSAttributedString getAttributeString:text lineSpacing:self.lineSpace]];
         NSMutableParagraphStyle *style  = [[NSMutableParagraphStyle alloc] init];
         style.alignment = self.textAlignment;
+        style.lineSpacing = self.lineSpace;
         [mAttrString addAttributes:@{NSFontAttributeName : self.font,
                                      NSParagraphStyleAttributeName : style
                                      } range:NSMakeRange(0, text.length)];

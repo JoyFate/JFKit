@@ -18,7 +18,7 @@
 #define kJFAppWidth  [[UIScreen mainScreen] bounds].size.width                          // 屏幕宽度
 #define kJFAppHeight [[UIScreen mainScreen] bounds].size.height                         // 屏幕高度
 
-#define kStatusHeight  20                                                               // 状态栏高度
+#define kStatusHeight  [JFDeviceInfo isIPhoneXSize] ? 40 : 20                                                               // 状态栏高度
 #define kNaviBarHeight 44                                                               // 导航栏高度
 #define kTabBarHeight  49                                                               // tabbar高度
 

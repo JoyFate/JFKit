@@ -18,4 +18,6 @@
  */
 - (void)setRadiusImage:(UIImage *)image radius:(CGFloat)radius;
 
++ (instancetype)makeWithImage:(UIImage *)image radius:(CGFloat)radius;
+
 @end

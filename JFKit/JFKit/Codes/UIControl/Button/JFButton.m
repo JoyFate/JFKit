@@ -36,6 +36,30 @@
     return [[JFButton alloc] init];
 }
 
++ (instancetype)makeWithTitle:(NSString *)title fontSize:(CGFloat)fontSize fontColor:(UIColor *)fontColor fontSelectColor:(UIColor *)fontSelectColor image:(UIImage *)image selectImage:(UIImage *)selectImage target:(id)target action:(SEL)action
+{
+    JFButton *button = [JFButton make];
+    
+    button.title = title;
+    button.titleFontSize = fontSize;
+    button.titleColor = fontColor;
+    
+    if (fontSelectColor) {
+        button.titleSelectedColor = fontSelectColor;
+    }
+    if (image) {
+        button.buttonImage = image;
+    }
+    if (selectImage) {
+        button.buttonSelectedImage = selectImage;
+    }
+    if (target && action) {
+        [button addTarget:target action:action];
+    }
+    
+    return button;
+}
+
 - (void)addTarget:(id)target action:(SEL)action
 {
     [self removeTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];

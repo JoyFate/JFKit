@@ -23,7 +23,7 @@
 {
     // iPhone X 和 Plus 同宽度, 高度更高, 所以适配同 Plus
     if ([JFDeviceInfo isIPhoneXSize]) {
-        return 736.0/667.0;
+        return 1;
     }
     return kJFAppHeight/667.0;
 }
@@ -33,7 +33,7 @@
 {
     // iPhone X 和 Plus 同宽度, 高度更高, 所以适配同 Plus
     if ([JFDeviceInfo isIPhoneXSize]) {
-        return 1;
+        return 667.0/736.0;
     }
     return kJFAppHeight/736.0;
 }

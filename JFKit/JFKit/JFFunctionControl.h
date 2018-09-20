@@ -14,7 +14,7 @@
 #import "JFHUB.h"
 #import "JFLocalNotification.h"
 #import "JFLocaltion.h"
-#import "MarqueeView.h"
+#import "JFMarqueeView.h"
 #import "JFNumberView.h"
 #import "JFOptionSlider.h"
 #import "JFPageViewController.h"

@@ -14,7 +14,9 @@
 {
     CGRect rect = (CGRect){0.f, 0.f, image.size};
     
-    UIGraphicsBeginImageContextWithOptions(image.size, NO, UIScreen.mainScreen.scale);CGContextAddPath(UIGraphicsGetCurrentContext(), [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:radius].CGPath);CGContextClip(UIGraphicsGetCurrentContext());
+    UIGraphicsBeginImageContextWithOptions(image.size, NO, UIScreen.mainScreen.scale);
+    CGContextAddPath(UIGraphicsGetCurrentContext(), [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:radius].CGPath);
+    CGContextClip(UIGraphicsGetCurrentContext());
     
     [image drawInRect:rect];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
@@ -23,4 +25,15 @@
     self.image = newImage;
 }
 
++ (instancetype)makeWithImage:(UIImage *)image radius:(CGFloat)radius
+{
+    JFImageView *imageView = [[JFImageView alloc] initWithImage:image];
+    
+    if (radius != 0) {
+        imageView.layer.cornerRadius = radius;
+        imageView.layer.masksToBounds = YES;
+    }
+    
+    return imageView;
+}
 @end

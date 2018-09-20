@@ -20,7 +20,7 @@ SingletonH(JFTabbarViewController)
 @property (nonatomic, strong) UIColor *tintColor;               // item 的渲染颜色
 @property (nonatomic, strong) UIColor *lineColor;               // tabbar 线条颜色
 @property (nonatomic, strong) UIColor *badeValueBgColor;        // 计数器的背景颜色
-//@property (nonatomic, assign) BOOL shadow;                      // 是否有阴影 默认有
+@property (nonatomic, assign) BOOL shadow;                      // 是否有阴影 默认有
 @property (nonatomic, assign) BOOL translucent;                 // 是否半透明 默认不透明
 
 

@@ -21,4 +21,6 @@
 // 增加属性
 - (void)addAttribute:(NSDictionary *)attribute range:(NSRange)range;
 
++ (instancetype)makeText:(NSString *)text fontColor:(UIColor *)color fontSize:(CGFloat)fontSize;
+
 @end
