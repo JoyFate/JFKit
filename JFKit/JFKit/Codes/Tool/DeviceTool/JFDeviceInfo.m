@@ -25,6 +25,9 @@
     if ([JFDeviceInfo isIPhoneXSize]) {
         return 1;
     }
+    else if ([JFDeviceInfo isIPhoneXrOrXsMaxSize]) {
+        return 1;
+    }
     return kJFAppHeight/667.0;
 }
 
@@ -62,6 +65,11 @@
 + (BOOL)isIPhoneXSize
 {
     return kJFAppHeight == 812.0 ? YES : NO;
+}
+
++ (BOOL)isIPhoneXrOrXsMaxSize;
+{
+    return kJFAppHeight == 896.0 ? YES : NO;
 }
 
 // 调用电话功能拨打电话

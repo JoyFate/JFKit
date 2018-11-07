@@ -70,6 +70,7 @@
 + (BOOL)isIPhone6Size;
 + (BOOL)isIPhone6PSize;
 + (BOOL)isIPhoneXSize;
++ (BOOL)isIPhoneXrOrXsMaxSize;
 
 #pragma mark - 调用设备功能
 /**
