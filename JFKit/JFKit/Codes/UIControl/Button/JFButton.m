@@ -85,7 +85,7 @@
         else if (self.buttonImageType == JFButtonType_ImageTop) {
             self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
             self.titleEdgeInsets = UIEdgeInsetsMake(imageSize.height + self.titleImageMargin/2, -imageSize.width, 0, 0);
-            self.imageEdgeInsets = UIEdgeInsetsMake(0, 0, titleSize.height + self.titleImageMargin/2, titleSize.width);
+            self.imageEdgeInsets = UIEdgeInsetsMake(0, 0, titleSize.height + self.titleImageMargin/2, -titleSize.width);
         }
     }
     else if (self.titleImageMargin > 0) {
