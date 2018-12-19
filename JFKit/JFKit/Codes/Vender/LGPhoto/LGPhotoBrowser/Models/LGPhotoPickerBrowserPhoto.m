@@ -75,22 +75,25 @@
 }
 
 - (void)notifyImageDidStartLoad {
+    __weak typeof(self) weakself = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        _isLoading = YES;
+        weakself.isLoading = YES;
         [[NSNotificationCenter defaultCenter] postNotificationName:LGPhotoImageDidStartLoad object:self];
     });
 }
 
 - (void)notifyImageDidFinishLoad {
+    __weak typeof(self) weakself = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        _isLoading = NO;
+        weakself.isLoading = NO;
         [[NSNotificationCenter defaultCenter] postNotificationName:LGPhotoImageDidFinishLoad object:self];
     });
 }
 
 - (void)notifyImageDidFailLoadWithError:(NSError *)error {
+    __weak typeof(self) weakself = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        _isLoading = NO;
+        weakself.isLoading = NO;
         NSDictionary *notifyInfo = [NSDictionary dictionaryWithObjectsAndKeys:error,@"error", nil];
         [[NSNotificationCenter defaultCenter] postNotificationName:LGPhotoImageDidFailLoadWithError object:self userInfo:notifyInfo];
     });

@@ -424,8 +424,8 @@ typedef NS_ENUM(NSInteger, DraggingDirect) {
     static CGFloat alphaValue = 1;
     alphaValue = alphaValue? 0 : 1;
     [UIView animateWithDuration:0.3 animations:^(void) {
-        [_imagePickerSelectView setAlpha:alphaValue];
-        [_XGtoolbar setAlpha:alphaValue];
+        [self.imagePickerSelectView setAlpha:alphaValue];
+        [self.XGtoolbar setAlpha:alphaValue];
     } completion:nil];
 }
 

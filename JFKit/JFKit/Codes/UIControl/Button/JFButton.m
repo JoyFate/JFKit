@@ -72,25 +72,25 @@
 {
     [super drawRect:rect];
     
-    if (self.buttonImageType == JFButtonType_ImageTop) {
+    if (self.buttonImageType != JFButtonType_Default && self.titleImageMargin != 0) {
         CGSize imageSize = self.imageView.frame.size;
         CGSize titleSize = self.titleLabel.frame.size;
         
-        self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
-        
-        self.titleEdgeInsets = UIEdgeInsetsMake(imageSize.width + self.titleImageMargin/2, -imageSize.width, 0, 0);
-        self.imageEdgeInsets = UIEdgeInsetsMake(0, 0, titleSize.width + self.titleImageMargin/2, -titleSize.width);
-    }
-    else if (self.buttonImageType == JFButtonType_ImageRight) {
-        CGSize imageSize = self.imageView.frame.size;
-        CGSize titleSize = self.titleLabel.frame.size;
-        CGSize textSize = [self.titleLabel.text sizeWithAttributes:@{NSFontAttributeName:self.titleLabel.font}];
-        CGSize frameSize = CGSizeMake(ceilf(textSize.width), ceilf(textSize.height));
-        if (titleSize.width + 0.5 < frameSize.width) {
-            titleSize.width = frameSize.width;
+        if (self.buttonImageType == JFButtonType_ImageRight) {
+            if (self.imageView.image && self.title.length > 0) {
+                self.titleEdgeInsets = UIEdgeInsetsMake(0, -imageSize.width - self.titleImageMargin/2, 0, imageSize.width);
+                self.imageEdgeInsets = UIEdgeInsetsMake(0, titleSize.width, 0, -titleSize.width - self.titleImageMargin/2);
+            }
         }
-        self.imageEdgeInsets = UIEdgeInsetsMake(0, titleSize.width, 0.0,  - (self.titleImageMargin - imageSize.width));
-        self.titleEdgeInsets = UIEdgeInsetsMake(0, -(self.titleImageMargin - titleSize.width), 0, imageSize.width);
+        else if (self.buttonImageType == JFButtonType_ImageTop) {
+            self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
+            self.titleEdgeInsets = UIEdgeInsetsMake(imageSize.height + self.titleImageMargin/2, -imageSize.width, 0, 0);
+            self.imageEdgeInsets = UIEdgeInsetsMake(0, 0, titleSize.height + self.titleImageMargin/2, titleSize.width);
+        }
+    }
+    else if (self.titleImageMargin > 0) {
+        self.titleEdgeInsets = UIEdgeInsetsMake(0, self.titleImageMargin/2, 0, 0);
+        self.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, self.titleImageMargin/2);
     }
 }
 
